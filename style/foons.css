@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'PS400';
+    src: url('../fons/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PS600';
+    src: url('../fons/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'PS700';
+    src: url('../fons/Poppins-Bold.ttf');
+}
