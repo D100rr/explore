@@ -129,6 +129,7 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 9999;
 }
 
 .main__choose {
@@ -227,16 +228,15 @@ header {
 
 .travel-bg {
     position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 0;
-    max-width: 1200px;
-    background: red;
+    z-index: -2;
+    width: 100%;
+    top: -20%;
 }
 
-.main__travle{
+.main__travle {
     display: flex;
     justify-content: center;
+    position: relative;
     gap: 62px;
     z-index: 100;
 }
@@ -258,37 +258,37 @@ header {
 }
 
 
-.main__travel-form{
+.main__travel-form {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
 }
 
-.main__travel-from-text{
+.main__travel-from-text {
     font-family: var(--PS400);
     color: #9DA1B4;
 }
 
-.main__travel-price{
+.main__travel-price {
     display: flex;
     align-items: center;
     gap: 95px;
-    margin-bottom:50px ;
+    margin-bottom: 50px;
 }
 
-.main__price-title{
+.main__price-title {
     font-family: var(--PS700);
     font-size: 36px;
     color: #FFC814;
 }
 
-.main__price-text{
+.main__price-text {
     font-family: var(--PS600);
     line-height: 24px;
     color: #9DA1B4;
 }
 
-.main__travel-btn{
+.main__travel-btn {
     padding: 18px 39px;
     border-radius: 4px;
     border: none;
@@ -296,5 +296,115 @@ header {
     cursor: pointer;
     font-family: var(--PS700);
 }
+
+.serf {
+    position: absolute;
+    right: -30%;
+    top: 20%;
+}
+
 /* Main end  */
 /* ***************************** */
+
+
+/* media start */
+
+@media(max-width: 1200px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .fa-solid {
+        display: none;
+    }
+}
+
+@media(max-width: 576px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .header__nav-list {
+        display: none;
+    }
+
+    i {
+        display: block;
+    }
+
+    .header__info-title {
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .header__info-text {
+        text-align: center;
+    }
+
+    .header__info-btns {
+        justify-content: center;
+    }
+
+    .main__ticekts-king {
+        top: 250px;
+    }
+
+    .main__form-checkIn {
+        max-width: 400px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .main__check-in {
+        justify-content: center;
+    }
+
+    .main__UDestination-inp {
+        width: 300px;
+        text-align: center;
+    }
+
+    .main__check-in-btn {
+        margin-left: 60px;
+    }
+
+    .main__travle {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .travel {
+        max-width: 400px;
+    }
+
+    .main__travel-title {
+        font-size: 30px;
+    }
+
+    .main__travel-text {
+        max-width: 400px;
+    }
+
+    .main__travel-from-text {
+        max-width: 400px;
+    }
+
+    .main__travel-price {
+        max-width: 400px;
+        gap: 45px;
+    }
+
+    .main__travel-btn {
+        position: relative;
+        left: 30%;
+    }
+
+    .serf {
+        position: absolute;
+        top: 105%;
+        left: 10%;
+    }
+}
+
+/* media end */
+/* *************************** */
